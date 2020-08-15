@@ -188,29 +188,25 @@
    /* Smooth Scrolling
     * ------------------------------------------------------ */
     var ssSmoothScroll = function() {
-        if ($('body').hasClass('menu-is-open')) {
+        $('.smoothscroll').on('click', function (e) {
+            var target = this.hash,
+            $target    = $(target);
+            
+                e.preventDefault();
+                e.stopPropagation();
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, cfg.scrollDuration, 'swing').promise().done(function () {
+
+                // check if menu is open
+                if ($('body').hasClass('menu-is-open')) {
                     $('.header-menu-toggle').trigger('click');
                 }
 
-//         $('.smoothscroll').on('click', function (e) {
-//             var target = this.hash,
-//             $target    = $(target);
-            
-//                 e.preventDefault();
-//                 e.stopPropagation();
-
-//             $('html, body').stop().animate({
-//                 'scrollTop': $target.offset().top
-//             }, cfg.scrollDuration, 'swing').promise().done(function () {
-
-//                 // check if menu is open
-//                 if ($('body').hasClass('menu-is-open')) {
-//                     $('.header-menu-toggle').trigger('click');
-//                 }
-
-//                 window.location.hash = target;
-//             });
-//         });
+                window.location.hash = target;
+            });
+        });
 
     };
 
