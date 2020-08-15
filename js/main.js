@@ -245,7 +245,7 @@
 
         ssPreloader();
         
-        ssOffCanvas();
+        
         ssMasonryFolio();
         ssPhotoswipe();
         ssSlickSlider();
