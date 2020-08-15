@@ -248,8 +248,8 @@
         ssOffCanvas();
         ssMasonryFolio();
         ssPhotoswipe();
-       
-        ssSmoothScroll();
+        ssSlickSlider();
+        
         ssAlertBoxes();
         ssAOS();
 
