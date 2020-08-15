@@ -8,7 +8,7 @@
     "use strict";
     
     var cfg = {
-        scrollDuration : 800, // smoothscroll duration
+        scrollDuration : 400, // smoothscroll duration
         mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
     },
 
@@ -58,7 +58,7 @@
 
         $WIN.on('scroll', function() {
 
-            if ($WIN.scrollTop() > 50) {
+            if ($WIN.scrollTop() > 150) {
                 menuTrigger.addClass('opaque');
             }
             else {
