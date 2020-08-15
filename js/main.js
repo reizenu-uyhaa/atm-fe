@@ -243,7 +243,7 @@
     (function clInit() {
 
         ssPreloader();
-        
+        ssMenuOnScrolldown();
         ssOffCanvas();
         ssMasonryFolio();
         ssPhotoswipe();
