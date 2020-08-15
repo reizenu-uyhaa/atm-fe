@@ -245,10 +245,10 @@
 
         ssPreloader();
         
-        
+        ssOffCanvas();
         ssMasonryFolio();
         ssPhotoswipe();
-        ssSlickSlider();
+       
         ssSmoothScroll();
         ssAlertBoxes();
         ssAOS();
